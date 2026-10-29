@@ -320,3 +320,12 @@ td strong { color: var(--navy); }
 .schedule-slot .icon { margin: 0 auto 14px; }
 @media (max-width: 960px) { .svc-grid { grid-template-columns: 1fr 1fr; } .ct-band { grid-template-columns: 1fr; } .ct-band .btn-row { justify-content: flex-start; } .schedule-grid { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .svc-grid { grid-template-columns: 1fr; } .ct-band { padding: 28px 22px; } }
+
+/* ---- Promo banner ---- */
+.promo { background: linear-gradient(90deg, var(--aqua-dark), var(--aqua)); color: var(--white); }
+.promo .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; }
+.promo strong { font-weight: 700; letter-spacing: 0.02em; }
+.promo span { font-size: 0.95rem; }
+.promo .btn { background: var(--white); color: var(--aqua-dark); border-color: var(--white); padding: 0.5rem 1rem; font-size: 0.9rem; white-space: nowrap; }
+.promo .btn:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.schedule-slot .promo-tag { display: inline-block; background: var(--aqua); color: var(--white); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }

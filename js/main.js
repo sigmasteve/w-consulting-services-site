@@ -3,7 +3,9 @@
 var SITE_CONFIG = {
   // Scheduling page to embed in "Find a time" (Cal.com, Calendly, Google appointment page, etc.).
   // Leave empty to show the email fallback instead of an embed.
-  schedulingUrl: "",
+  schedulingUrl: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3uARUA0IMknYEjOB6Nei40o2CogWgLB4AkwE7a0VPa7JEKuDpQAQvASA1LkXrDom7DLVeVbIGh?gv=true",
+  // Short booking link used on buttons (opens in a new tab).
+  bookingUrl: "https://calendar.app.google/3QA8uuYChjPQmaer5",
   // Where the contact form posts (e.g. "https://formspree.io/f/abcd1234").
   // Leave empty and the form opens the visitor's mail client addressed to contactEmail.
   formEndpoint: "",
@@ -49,11 +51,17 @@ var SITE_CONFIG = {
       slot.appendChild(frame);
       slot.classList.add('has-embed');
       var btn = document.getElementById('schedule-link');
-      if (btn) { btn.href = SITE_CONFIG.schedulingUrl; btn.target = '_blank'; btn.rel = 'noopener'; }
+      if (btn) { btn.href = SITE_CONFIG.bookingUrl || SITE_CONFIG.schedulingUrl; btn.target = '_blank'; btn.rel = 'noopener'; }
     } else {
       slot.querySelectorAll('[data-email]').forEach(function (el) { el.textContent = SITE_CONFIG.contactEmail; if (el.tagName === 'A') el.href = 'mailto:' + SITE_CONFIG.contactEmail + '?subject=' + encodeURIComponent('Find a time: W Consulting Services'); });
     }
   }
+
+  // Booking buttons
+  document.querySelectorAll('[data-booking]').forEach(function (el) {
+    var url = SITE_CONFIG.bookingUrl || SITE_CONFIG.schedulingUrl;
+    if (url) { el.href = url; el.target = '_blank'; el.rel = 'noopener'; }
+  });
 
   // Contact form: post to endpoint if configured, else open a pre-filled email
   var form = document.getElementById('contact-form');

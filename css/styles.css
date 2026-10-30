@@ -333,3 +333,4 @@ td strong { color: var(--navy); }
 /* Accent on navy backgrounds: keep contrast high */
 .band-navy .btn-primary, .ct-band .btn-primary { background: var(--white); color: var(--navy); border-color: var(--white); }
 .band-navy .btn-primary:hover, .ct-band .btn-primary:hover { background: #E4ECF7; border-color: #E4ECF7; color: var(--navy); }
+@media (max-width: 720px) { .brand-name small { font-size: 0.64rem; letter-spacing: 0.05em; } }

@@ -1,6 +1,8 @@
 # W Consulting Services website
 
-Single-page static landing site, no build step. Sections: hero, services, Candid Table callout, about, find a time, contact.
+Single-page static landing site, no build step. Sections: hero, services, "Also from W Consulting" cards (Candid Table, Hound), about, find a time, contact.
+
+Typeface: Plus Jakarta Sans (SIL Open Font License, see `fonts/OFL.txt`), self-hosted as a single variable font in `fonts/` so the stylistic sets work. Headings use ExtraBold with the Lancip alternates (`font-feature-settings: "ss01"` in `css/styles.css`); drop that line to go back to the default letterforms.
 
 - `index.html` — the page
 - `css/styles.css` — styles; brand colors are CSS variables at the top

@@ -13,7 +13,7 @@ Advisory boards, dinners, panels, and roundtables are not on this site. They liv
 |---|---|
 | `schedulingUrl` | Cal.com / Calendly / Google appointment page. When set, it is embedded in "Find a time". When empty, the section shows an email fallback. |
 | `formEndpoint` | Where the contact form posts (e.g. a Formspree URL). When empty, submitting opens the visitor's mail client with a pre-filled message to `contactEmail`. |
-| `contactEmail` | Public address shown on the page. Currently a placeholder. |
+| `contactEmail` | Public address shown on the page (contact@wconsulting.io). |
 
 ## Preview locally
 ```

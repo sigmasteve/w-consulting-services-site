@@ -10,7 +10,7 @@ var SITE_CONFIG = {
   // Leave empty and the form opens the visitor's mail client addressed to contactEmail.
   formEndpoint: "",
   // Public contact address shown on the page and used by the mailto fallback.
-  contactEmail: "steve@example.com"
+  contactEmail: "contact@wconsulting.io"
 };
 
 (function () {

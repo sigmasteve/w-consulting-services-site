@@ -160,10 +160,10 @@ p { margin: 0 0 1em; }
 .svc .price small { opacity: 0.75; font-weight: 500; }
 
 /* Ventures (Candid Table, Hound) */
-.venture-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.ct-band { background: var(--b5); color: var(--b1); border-radius: 10px; padding: 32px 34px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; }
+.venture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.ct-band { background: var(--b5); color: var(--b1); border-radius: 10px; padding: 28px 28px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; }
 .ct-band .eyebrow { color: var(--b1); opacity: 0.8; }
-.ct-band h3 { color: var(--white); font-size: 1.5rem; margin-bottom: 8px; }
+.ct-band h3 { color: var(--white); font-size: 1.35rem; margin-bottom: 8px; }
 .ct-band p { margin: 0; opacity: 0.9; }
 .ct-band .btn-row { margin-top: 0; }
 
@@ -233,6 +233,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 960px) {
   .hero-grid, .about-grid, .contact-grid, .schedule-grid { grid-template-columns: 1fr; gap: 36px; }
   .svc-grid { grid-template-columns: 1fr 1fr; }
+  .venture-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero .wm { width: 320px; right: -90px; top: 10px; }
 }

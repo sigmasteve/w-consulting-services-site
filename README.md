@@ -1,6 +1,6 @@
 # W Consulting Services website
 
-Single-page static landing site, no build step. Sections: hero, services, "Also from W Consulting" cards (Candid Table, Hound), about, find a time, contact.
+Single-page static landing site, no build step. Sections: hero, services, "Also from W Consulting" cards (Candid Table, Hound, WonderWired Learning), about, find a time, contact.
 
 ## Brand
 
@@ -11,6 +11,7 @@ Styled to the Stephen Washington brand kit (Nov 2026). Rules that matter when ed
 - **Type.** Besley (Google Fonts) for headings and the quote; Plus Jakarta Sans (self-hosted in `fonts/`, SIL OFL) for everything else, with the ss03 alternates on body text and ss01 on small accents.
 - **Dividers.** Each `<svg class="div">` in `index.html` is a slanted bar whose top fill matches the section above and polygon fill matches the section below. Keep them when reordering sections.
 - **Lettermark.** The SW lettermark is an inline `<symbol id="lettermark">` at the top of `<body>`, reused in the header, hero watermark, and footer.
+- **Favicons.** `favicon.svg` is the source (lettermark on the brand blue, rounded). `favicon.ico` (16/32/48), `apple-touch-icon.png` (180, square), `icon-192.png` and `icon-512.png` (manifest) are rendered from it. To regenerate after changing the mark: render the SVG at 1024px (QuickLook `qlmanage -t -s 1024` works on macOS), resize with `sips`, and rebuild the ICO.
 
 - `index.html` — the page
 - `css/styles.css` — styles; brand colors are CSS variables at the top

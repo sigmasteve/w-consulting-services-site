@@ -2,6 +2,16 @@
 
 Single-page static landing site, no build step. Sections: hero, services, "Also from W Consulting" cards (Candid Table, Hound), about, find a time, contact.
 
+## Brand
+
+Styled to the Stephen Washington brand kit (Nov 2026). Rules that matter when editing:
+
+- **Blues carry the page.** Tokens `--b1` (pale, text and the one light section) through `--b5` (page background) in `css/styles.css`.
+- **Gold is rare on purpose.** `--g1` and friends appear only in the angled divider bars between sections, the pull quote in About, the "No-BS November" label, and hover/active states on links and buttons. Do not add gold elsewhere.
+- **Type.** Besley (Google Fonts) for headings and the quote; Plus Jakarta Sans (self-hosted in `fonts/`, SIL OFL) for everything else, with the ss03 alternates on body text and ss01 on small accents.
+- **Dividers.** Each `<svg class="div">` in `index.html` is a slanted bar whose top fill matches the section above and polygon fill matches the section below. Keep them when reordering sections.
+- **Lettermark.** The SW lettermark is an inline `<symbol id="lettermark">` at the top of `<body>`, reused in the header, hero watermark, and footer.
+
 - `index.html` — the page
 - `css/styles.css` — styles; brand colors are CSS variables at the top
 - `js/main.js` — **site config** (top of file) plus nav, scheduling embed, and contact form wiring

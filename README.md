@@ -1,6 +1,8 @@
 # W Consulting Services website
 
-Single-page static landing site, no build step. Sections: hero, services, "Also from W Consulting" cards (Candid Table, Hound, WonderWired Learning), about, find a time, contact.
+Static site, no build step. The homepage (`index.html`) has: hero, services (two lanes: Identity Advisory and Technology Advisory), "Also from W Consulting" cards (Candid Table, Hound, WonderWired Learning), about, find a time, contact.
+
+The full engagement catalog with pricing anchors lives at `engagements.html` (served as `/engagements`). It is intentionally unlinked from the homepage and carries `noindex, nofollow` (meta tag plus an `X-Robots-Tag` header in `vercel.json`), so share the URL directly with people who should see pricing.
 
 ## Brand
 
